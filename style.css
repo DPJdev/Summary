@@ -7,6 +7,8 @@
 body {
   font-size: 15px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   font-size: 18px;
 }
@@ -29,8 +31,13 @@ body {
   border-radius: 20px;
   padding: 15px;
 }
-.left > p {
-  margin-bottom: 35px;
+.left p {
+  color: hsla(0, 0%, 100%, 0.6);
+  padding: 0px 40px 15px 40px;
+}
+.left h1 {
+  font-size: 25px;
+  margin-bottom: 0;
 }
 .circle {
   width: 115px;
@@ -52,8 +59,36 @@ body {
 }
 /* end of the left side */
 
+/* right side */
 .right {
-  padding: 15px;
+  padding: 40px;
+}
+
+.right .first,
+.secound,
+.third,
+.fourth {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 15px 0 15px 0;
+  border-radius: 10px;
+}
+
+.first {
+  background: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.secound {
+  background: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.third {
+  background: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.fourth {
+  background: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
 }
 
 /* assign */
