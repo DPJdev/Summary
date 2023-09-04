@@ -15,6 +15,8 @@ body {
 
 .container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background: hsl(0, 0%, 100%);
   box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.273);
   border-radius: 20px;
@@ -27,7 +29,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(hsla(252, 100%, 67%, 1), hsl(241, 81%, 54%));
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 20px;
   padding: 15px;
 }
@@ -61,16 +63,19 @@ body {
 
 /* right side */
 .right {
-  padding: 40px;
+  padding: 25px;
+  width: 300px;
 }
 
 .right .first,
 .secound,
 .third,
 .fourth {
-  box-sizing: border-box;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
   padding: 10px;
-  margin: 15px 0 15px 0;
+  margin: 10px 0 10px 0;
   border-radius: 10px;
 }
 
@@ -90,7 +95,23 @@ body {
   background: hsla(234, 85%, 45%, 0.1);
   color: hsl(234, 85%, 45%);
 }
+#continueButton {
+  width: 100%;
+  margin: 25px 0 15px 0;
+  padding: 15px;
+  border-radius: 50px;
+  border: solid 2px hsl(224, 30%, 27%);
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-weight: 700;
+}
 
+#continueButton:hover {
+  background-color: hsl(224, 29%, 39%);
+  cursor: pointer;
+  border: solid 2px hsl(224, 30%, 27%);
+}
 /* assign */
 .attribution {
   font-size: 11px;
